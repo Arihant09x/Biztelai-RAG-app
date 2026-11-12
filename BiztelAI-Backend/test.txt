@@ -1,0 +1,9 @@
+{
+    "error": {
+        "code": "RESOURCE_NOT_FOUND",
+        "details": [],
+        "message": "Ingestion job 'd883a82d-bb32-4f60-b9d8-f17294eb1c97' not found."
+    },
+    "request_id": "98b52127-662b-4d51-8995-cb0e3119baa0",
+    "success": false
+}

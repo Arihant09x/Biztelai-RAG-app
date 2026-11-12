@@ -1,0 +1,65 @@
+[
+  {
+    "id": "eval_001_normal_qa",
+    "query": "What is the maximum operating pressure for the hydraulic press in SOP-305?",
+    "expected_answerable": true,
+    "expected_keywords": ["180 bar", "hydraulic", "pressure"],
+    "is_safety_critical": false,
+    "is_contradiction": false,
+    "notes": "Testing exact numerical threshold retrieval"
+  },
+  {
+    "id": "eval_002_safety_critical",
+    "query": "What PPE is required before performing CNC spindle maintenance?",
+    "expected_answerable": true,
+    "expected_keywords": ["safety glasses", "hearing protection", "PPE"],
+    "is_safety_critical": true,
+    "is_contradiction": false,
+    "notes": "Testing safety alert detection and PPE instructions"
+  },
+  {
+    "id": "eval_003_procedural_steps",
+    "query": "Explain the step-by-step procedure for lockout tagout electrical isolation.",
+    "expected_answerable": true,
+    "expected_keywords": ["480V", "padlock", "zero energy", "disconnect"],
+    "is_safety_critical": true,
+    "is_contradiction": false,
+    "notes": "Testing multi-step sequential procedure generation"
+  },
+  {
+    "id": "eval_004_unanswerable_abstention",
+    "query": "What is the chocolate cake baking temperature and recipe?",
+    "expected_answerable": false,
+    "expected_keywords": [],
+    "is_safety_critical": false,
+    "is_contradiction": false,
+    "notes": "Testing out-of-domain query abstention"
+  },
+  {
+    "id": "eval_005_unsupported_machine",
+    "query": "How do I replace the laser diode on the XYZ-9000 fiber cutter?",
+    "expected_answerable": false,
+    "expected_keywords": [],
+    "is_safety_critical": false,
+    "is_contradiction": false,
+    "notes": "Testing missing equipment documentation abstention"
+  },
+  {
+    "id": "eval_006_comparison",
+    "query": "Compare the daily inspection checklist for the CNC spindle versus the hydraulic press.",
+    "expected_answerable": true,
+    "expected_keywords": ["CNC", "hydraulic", "inspection"],
+    "is_safety_critical": false,
+    "is_contradiction": false,
+    "notes": "Testing multi-document synthesis and comparison"
+  },
+  {
+    "id": "eval_007_exact_tolerance",
+    "query": "What is the ISO-9001 tolerance limit for caliper calibration?",
+    "expected_answerable": true,
+    "expected_keywords": ["0.02 mm", "caliper", "calibration"],
+    "is_safety_critical": false,
+    "is_contradiction": false,
+    "notes": "Testing exact measurement extraction from quality SOP"
+  }
+]
